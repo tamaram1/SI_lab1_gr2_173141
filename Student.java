@@ -48,12 +48,18 @@ class Student {
 	}
 
 
-	
-	public double getAverage() {
+
+	public double getAverage(List <Integer> grades) {
 		//TODO
+		int sum = 0;
+		for(int i = 0; i < grades.size(); i++){
+			sum += i;
+		}
+		return sum / grades.size();
 	}
 
 	public int ECTSCredits() {
 		//TODO
+		
 	}
 }
